@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fff4e6, #ffd9b3);
+    color: #3e3e3e;
+    padding: 40px 20px;
+}
+
+.about_container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fffaf3;
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about_contents {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 50px;
+}
+
+.imageSection {
+    position: relative;
+    min-width: 280px;
+    height: 380px;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.imageSection::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #d48c3f;
+    top: 15px;
+    left: 15px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.infoSection h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4a2f1c;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.infoSection h1::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: #d48c3f;
+    bottom: -5px;
+    left: 0;
+}
+
+.infoSection h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b8742a;
+    margin-bottom: 20px;
+}
+
+.infoSection p {
+    font-size: 16px;
+    color: #5c4b3a;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.personalInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+    margin: 20px 0;
+    border-bottom: 1px solid #e0b78e;
+    padding-bottom: 20px;
+}
+
+.personalInfo div {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    color: #3e3e3e;
+}
+
+.personalInfo div span:first-child {
+    font-weight: 500;
+    min-width: 80px;
+    color: #b8742a;
+}
+
+.infoSection button {
+    padding: 10px 25px;
+    border: 2px solid #d48c3f;
+    background-color: transparent;
+    color: #d48c3f;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.infoSection button:hover {
+    background-color: #d48c3f;
+    color: white;
+}

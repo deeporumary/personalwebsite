@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #fff4e6, #ffd9b3);
+    color: #3e3e3e;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5%;
+  }
+  
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fffaf3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+  }
+  
+  .row section.col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row section.left {
+    flex: 0 0 60%;
+    min-width: 300px;
+  }
+  
+  .row section.right {
+    flex: 0 0 40%;
+    padding-left: 40px;
+  }
+  
+  section.left .contactTitle h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4a2f1c;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  section.left .contactTitle h2::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: #c3a27f;
+    top: 120%;
+    left: 0;
+  }
+  
+  section.left .contactTitle h2::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #d48c3f;
+    top: calc(120% - 1px);
+    left: 0;
+  }
+  
+  section.left .contactTitle p {
+    font-size: 16px;
+    color: #5c4b3a;
+    line-height: 1.5;
+    padding-bottom: 22px;
+  }
+  
+  .contactInfo .iconGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  
+  .iconGroup .icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconGroup .icon i {
+    font-size: 20px;
+    color: #4a2f1c;
+    margin-top: 2px;
+    align-items: center;
+  }
+  
+  .iconGroup .details span {
+    display: block;
+    font-size: 15px;
+    color: #3e3e3e;
+  }
+  
+  .iconGroup .details span:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4a2f1c;
+  }
+  
+  .socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    gap: 12px;
+  }
+  
+  .socialMedia a {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #1992f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .socialMedia a:hover {
+    background-color: #1277c9;
+  }
